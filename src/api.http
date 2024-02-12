@@ -1,0 +1,34 @@
+
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{    
+"username": "rahul12",
+"password": "rahul@456"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{    
+"username": "vvr",
+"password": "vvr"
+}
+
+
+###
+
+GET http://localhost:5000/api/transactions
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcsImlhdCI6MTcwNzczMTE2NiwiZXhwIjoxNzA3NzM0NzY2fQ.QLdOAn63_2QaH67nZQTkhesQiRL3FSvAsK1EJSxV0Wk
+
+
+###
+
+POST  http://localhost:5000/api/transactions
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcsImlhdCI6MTcwNzczMTE2NiwiZXhwIjoxNzA3NzM0NzY2fQ.QLdOAn63_2QaH67nZQTkhesQiRL3FSvAsK1EJSxV0Wk
+Content-Type: application/json
+
+{"date": "2024-02-12","category": "Utilities","amount": -100.00}
+
